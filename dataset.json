@@ -1,0 +1,22 @@
+[
+  {
+    "task": "Create a JSON object representing a user profile with fields: name (string), age (integer), email (string), and is_active (boolean)",
+    "format": "json"
+  },
+  {
+    "task": "Write a Python function that takes a list of numbers and returns the sum of all even numbers",
+    "format": "python"
+  },
+  {
+    "task": "Create a regex pattern that matches valid email addresses (basic pattern with alphanumeric characters, dots, hyphens before @ symbol)",
+    "format": "regex"
+  },
+  {
+    "task": "Write a Python function that takes a string and returns it with all vowels removed",
+    "format": "python"
+  },
+  {
+    "task": "Create a JSON array containing three book objects, each with title (string), author (string), and year_published (integer) fields",
+    "format": "json"
+  }
+]

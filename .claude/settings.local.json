@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(xargs ls *)",
+      "Bash(python3 -m venv /Users/Yauhen_Hutsko/Work/Projects/AI-SBX)",
+      "Bash(/Users/Yauhen_Hutsko/Work/Projects/AI-SBX/bin/pip freeze *)"
+    ]
+  }
+}

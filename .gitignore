@@ -1,0 +1,16 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# Environment
+.env
+
+# PyCharm
+.idea/workspace.xml
+.idea/shelf/
+
+# Jupyter
+.ipynb_checkpoints/
+
