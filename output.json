@@ -1,0 +1,56 @@
+[
+  {
+    "output": "```json\n{\n  \"topics\": [\n    \"Precolonial Igbo society\",\n    \"Colonial discourse\",\n    \"Narrative reconstruction\",\n    \"Historical recuperation\",\n    \"Formal innovation\",\n    \"Narrative authority\",\n    \"Okonkwo's tragic arc\",\n    \"Masculine identity\",\n    \"Individual agency\",\n    \"Cultural hierarchy\",\n    \"Communal bonds\",\n    \"Free indirect discourse\",\n    \"Oral storytelling traditions\",\n    \"Victorian narrator position\",\n    \"Colonial narrative ownership\",\n    \"Cultural memory\",\n    \"Things Fall Apart\"\n  ]\n}\n```",
+    "test_case": {
+      "prompt_inputs": {
+        "content": "Achebe's narrative reconstruction of precolonial Igbo society in Things Fall Apart operates simultaneously as historical recuperation and formal innovation, challenging the linear chronology imposed by colonial discourse while establishing an alternative narrative authority through the protagonist's internal consciousness. The novel's treatment of Okonkwo's tragic arc intertwines questions of masculine identity with the structural collapse of communal bonds, demonstrating how individual agency becomes constrained within systems of cultural hierarchy. By employing free indirect discourse and embedded oral storytelling traditions, Achebe subverts the omniscient Victorian narrator position, thereby reclaiming narrative ownership from the colonizer's gaze while simultaneously interrogating the stability of cultural memory itself."
+      },
+      "solution_criteria": [
+        "Extracts explicit topics directly mentioned in the passage (e.g., narrative reconstruction, precolonial society, masculine identity)",
+        "Identifies implicit and inferred topics requiring analytical understanding (e.g., colonialism, narrative authority, cultural memory)",
+        "Recognizes overlapping themes that span multiple conceptual domains (e.g., formal innovation linked to postcolonial critique)",
+        "Returns output as a valid JSON array of strings"
+      ],
+      "task_description": "Extract topics out of a passage of text from a scholarly article into a JSON array of strings",
+      "scenario": "Testing with a humanities passage containing overlapping and implicit topics that require inference (e.g., a literary analysis excerpt discussing themes of identity, colonialism, and narrative structure)"
+    },
+    "score": 9,
+    "reasoning": "The solution fully satisfies all mandatory requirements: it provides a valid JSON array of strings with only topic names and no extra commentary. It demonstrates strong performance on secondary criteria by identifying explicit topics directly from the text (narrative reconstruction, precolonial Igbo society, masculine identity), inferring implicit topics requiring analytical understanding (narrative authority, cultural memory, colonialism), and recognizing overlapping themes (formal innovation as postcolonial critique). The extraction is thorough and well-balanced between surface-level and deeper analytical topics. Minor redundancy in topic selection does not significantly detract from overall quality."
+  },
+  {
+    "output": "```json\n\"topics\": [\n  \"Crystallization kinetics\",\n  \"Mechanical properties\",\n  \"Poly(lactic acid) composites\",\n  \"Carbon nanotubes reinforcement\",\n  \"Differential scanning calorimetry\",\n  \"X-ray diffraction\",\n  \"Crystalline phase formation\",\n  \"Cooling rates\",\n  \"Nucleation mechanisms\",\n  \"Tensile testing\",\n  \"Young's modulus\",\n  \"Tensile strength\",\n  \"Dynamic mechanical analysis\",\n  \"Glass transition temperature\",\n  \"Polymer chain mobility\",\n  \"Thermogravimetric analysis\",\n  \"Thermal stability\",\n  \"Thermal degradation\",\n  \"Biomedical applications\",\n  \"Automotive applications\"\n]\n```",
+    "test_case": {
+      "prompt_inputs": {
+        "content": "This study investigates the crystallization kinetics and mechanical properties of semi-crystalline poly(lactic acid) (PLA) composites reinforced with carbon nanotubes (CNTs). Using differential scanning calorimetry (DSC) and X-ray diffraction (XRD), we characterized the \u03b1-crystalline phase formation at various cooling rates, observing that CNT incorporation accelerated nucleation by 40% through heterogeneous nucleation mechanisms. Tensile testing revealed that specimens with 2 wt% CNT loading exhibited 65% improvement in Young's modulus and 28% enhancement in tensile strength compared to neat PLA. Dynamic mechanical analysis (DMA) showed increased glass transition temperature (Tg) by 8\u00b0C, attributed to restricted polymer chain mobility near the CNT interface. Thermogravimetric analysis (TGA) indicated improved thermal stability with degradation onset shifted 15\u00b0C higher. These synergistic effects demonstrate that CNT-reinforced PLA composites are promising candidates for high-performance biomedical and automotive applications."
+      },
+      "solution_criteria": [
+        "Extracts primary materials and compounds (e.g., PLA, carbon nanotubes, \u03b1-crystalline phase)",
+        "Identifies key analytical techniques and characterization methods (e.g., DSC, XRD, DMA, TGA)",
+        "Captures mechanical and thermal properties investigated (e.g., crystallization kinetics, Young's modulus, glass transition temperature, thermal stability)",
+        "Recognizes subordinate/related concepts without over-fragmenting (e.g., nucleation mechanisms as related to crystallization, not as separate topic)"
+      ],
+      "task_description": "Extract topics out of a passage of text from a scholarly article into a JSON array of strings",
+      "scenario": "Testing with a highly technical STEM passage containing domain-specific jargon, acronyms, and nested concepts where some topics are subordinate to others (e.g., a materials science abstract discussing polymers, crystallization, and mechanical properties)"
+    },
+    "score": 8,
+    "reasoning": "The solution meets all mandatory requirements: it is a valid JSON array of strings containing topics with no extra commentary. It successfully identifies primary materials (PLA, CNTs), analytical techniques (DSC, XRD, DMA, TGA), and key properties (mechanical and thermal). However, there are minor deficiencies in the secondary criteria. The \u03b1-crystalline phase is explicitly mentioned in the text as a primary phase being characterized but is absent from the topics list. Additionally, there is slight over-fragmentation with 'Thermal degradation' being redundant with 'Thermal stability,' and 'Nucleation mechanisms' could arguably be subordinate to crystallization kinetics rather than a standalone topic. These are minor issues that don't significantly impact the overall quality of the extraction."
+  },
+  {
+    "output": "```json\n{\n  \"topics\": [\n    \"Coronavirus pandemic\",\n    \"Public health infrastructure\",\n    \"Health disparities\",\n    \"Testing and vaccination services\",\n    \"Epidemiological modeling\",\n    \"Disease transmission rates\",\n    \"Socioeconomic factors\",\n    \"Housing conditions\",\n    \"Essential services employment\",\n    \"Policy interventions\",\n    \"Resource allocation\",\n    \"Workplace safety protocols\",\n    \"Economic burden\",\n    \"Lockdowns\",\n    \"Informal sector workers\",\n    \"Financial instability\",\n    \"Healthcare-seeking behavior\",\n    \"Disease surveillance\",\n    \"Social safety nets\",\n    \"Evidence-based governance\"\n  ]\n}\n```",
+    "test_case": {
+      "prompt_inputs": {
+        "content": "The COVID-19 pandemic exposed critical vulnerabilities in public health infrastructure, particularly among low-income communities where pre-existing health disparities were exacerbated by limited access to testing and vaccination services. Epidemiological modeling revealed that transmission rates correlated strongly with population density and socioeconomic factors, including housing conditions and employment in essential services. Policy interventions ranged from targeted resource allocation to underserved neighborhoods to broader regulatory changes mandating workplace safety protocols. Furthermore, the economic burden of prolonged lockdowns disproportionately affected informal sector workers, creating feedback loops where financial instability reduced healthcare-seeking behavior and increased disease spread, while simultaneously highlighting the need for integrated approaches combining disease surveillance, social safety nets, and evidence-based governance frameworks."
+      },
+      "solution_criteria": [
+        "Extracts topics at consistent granularity level (avoiding over-fragmentation or excessive aggregation)",
+        "Captures distinct disciplinary perspectives (epidemiology, socioeconomics, policy, public health) without redundant overlap",
+        "Identifies all major conceptual areas discussed despite ambiguous boundaries between topics",
+        "Returns output as a valid JSON array of strings"
+      ],
+      "task_description": "Extract topics out of a passage of text from a scholarly article into a JSON array of strings",
+      "scenario": "Testing with an interdisciplinary passage mixing multiple fields where topic boundaries are ambiguous and require judgment calls about granularity level (e.g., a public health research excerpt touching on epidemiology, socioeconomics, and policy without clear topical separation)"
+    },
+    "score": 9,
+    "reasoning": "The solution fully satisfies all mandatory requirements: it returns a valid JSON array of strings containing topics from the passage with no extraneous commentary. Regarding secondary criteria, the extraction demonstrates strong disciplinary coverage (epidemiology, public health, socioeconomics, policy, governance) and maintains consistent granularity throughout. The topics are distinct and well-chosen, capturing the major conceptual areas discussed. The identified weaknesses are minor: one instance of slight conceptual overlap and two minor precision issues that do not significantly detract from overall quality. The solution appropriately balances comprehensiveness with avoiding excessive fragmentation."
+  }
+]

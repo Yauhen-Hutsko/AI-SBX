@@ -1,22 +1,50 @@
 [
   {
-    "task": "Create a JSON object representing a user profile with fields: name (string), age (integer), email (string), and is_active (boolean)",
-    "format": "json"
+    "prompt_inputs": {
+      "height": "180 cm",
+      "weight": "72 kg",
+      "goal": "Marathon training with carbohydrate loading and high calorie intake, with meals timed around a 2-hour morning run",
+      "restrictions": "Vegetarian, no nuts"
+    },
+    "solution_criteria": [
+      "Meal plan includes 4+ meals/snacks distributed throughout the day with specific timing around the 2-hour morning training window",
+      "Total daily calories support high-endurance athlete needs (approximately 3,500-4,000 calories)",
+      "Carbohydrate-focused nutrition with at least 60% of calories from carbs to support marathon training",
+      "All meals respect vegetarian and nut-free dietary restrictions"
+    ],
+    "task_description": "Write a compact, concise one-day meal plan for a single athlete.",
+    "scenario": "Testing with a high-endurance athlete (marathon runner) requiring high calorie intake and carbohydrate loading, with specific timing constraints around training windows"
   },
   {
-    "task": "Write a Python function that takes a list of numbers and returns the sum of all even numbers",
-    "format": "python"
+    "prompt_inputs": {
+      "height": "180 cm",
+      "weight": "85 kg",
+      "goal": "Maximize strength and muscle recovery from weightlifting training",
+      "restrictions": "None"
+    },
+    "solution_criteria": [
+      "Meal plan includes 4-5 eating occasions throughout the day",
+      "Protein is distributed across meals (minimum 25-30g per occasion for optimal muscle synthesis)",
+      "Total daily calories and macros support strength athlete needs (~3000-3200 kcal, high protein)",
+      "Includes recovery-focused nutrition around training (pre/post-workout nutrition specified)"
+    ],
+    "task_description": "Write a compact, concise one-day meal plan for a single athlete.",
+    "scenario": "Testing with a strength/power athlete (weightlifter) focusing on protein distribution and recovery nutrition across 4-5 eating occasions"
   },
   {
-    "task": "Create a regex pattern that matches valid email addresses (basic pattern with alphanumeric characters, dots, hyphens before @ symbol)",
-    "format": "regex"
-  },
-  {
-    "task": "Write a Python function that takes a string and returns it with all vowels removed",
-    "format": "python"
-  },
-  {
-    "task": "Create a JSON array containing three book objects, each with title (string), author (string), and year_published (integer) fields",
-    "format": "json"
+    "prompt_inputs": {
+      "height": "178",
+      "weight": "72",
+      "goal": "High-intensity cycling training with sustained energy for 3-hour rides",
+      "restrictions": "Vegan (no animal products)"
+    },
+    "solution_criteria": [
+      "Meal plan covers all three meals and includes snacks to meet high energy demands for endurance cycling",
+      "All foods are plant-based with no animal products",
+      "Includes nutrient-dense options providing adequate protein, carbohydrates, and healthy fats for performance",
+      "Meals are practical and compact enough for a single day without extensive preparation"
+    ],
+    "task_description": "Write a compact, concise one-day meal plan for a single athlete.",
+    "scenario": "Testing with a sport-specific dietary constraint (vegan cyclist) requiring nutrient-dense plant-based options while meeting performance energy demands"
   }
 ]

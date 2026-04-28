@@ -1,0 +1,41 @@
+[
+  {
+    "prompt_inputs": {
+      "content": "Achebe's narrative reconstruction of precolonial Igbo society in Things Fall Apart operates simultaneously as historical recuperation and formal innovation, challenging the linear chronology imposed by colonial discourse while establishing an alternative narrative authority through the protagonist's internal consciousness. The novel's treatment of Okonkwo's tragic arc intertwines questions of masculine identity with the structural collapse of communal bonds, demonstrating how individual agency becomes constrained within systems of cultural hierarchy. By employing free indirect discourse and embedded oral storytelling traditions, Achebe subverts the omniscient Victorian narrator position, thereby reclaiming narrative ownership from the colonizer's gaze while simultaneously interrogating the stability of cultural memory itself."
+    },
+    "solution_criteria": [
+      "Extracts explicit topics directly mentioned in the passage (e.g., narrative reconstruction, precolonial society, masculine identity)",
+      "Identifies implicit and inferred topics requiring analytical understanding (e.g., colonialism, narrative authority, cultural memory)",
+      "Recognizes overlapping themes that span multiple conceptual domains (e.g., formal innovation linked to postcolonial critique)",
+      "Returns output as a valid JSON array of strings"
+    ],
+    "task_description": "Extract topics out of a passage of text from a scholarly article into a JSON array of strings",
+    "scenario": "Testing with a humanities passage containing overlapping and implicit topics that require inference (e.g., a literary analysis excerpt discussing themes of identity, colonialism, and narrative structure)"
+  },
+  {
+    "prompt_inputs": {
+      "content": "This study investigates the crystallization kinetics and mechanical properties of semi-crystalline poly(lactic acid) (PLA) composites reinforced with carbon nanotubes (CNTs). Using differential scanning calorimetry (DSC) and X-ray diffraction (XRD), we characterized the \u03b1-crystalline phase formation at various cooling rates, observing that CNT incorporation accelerated nucleation by 40% through heterogeneous nucleation mechanisms. Tensile testing revealed that specimens with 2 wt% CNT loading exhibited 65% improvement in Young's modulus and 28% enhancement in tensile strength compared to neat PLA. Dynamic mechanical analysis (DMA) showed increased glass transition temperature (Tg) by 8\u00b0C, attributed to restricted polymer chain mobility near the CNT interface. Thermogravimetric analysis (TGA) indicated improved thermal stability with degradation onset shifted 15\u00b0C higher. These synergistic effects demonstrate that CNT-reinforced PLA composites are promising candidates for high-performance biomedical and automotive applications."
+    },
+    "solution_criteria": [
+      "Extracts primary materials and compounds (e.g., PLA, carbon nanotubes, \u03b1-crystalline phase)",
+      "Identifies key analytical techniques and characterization methods (e.g., DSC, XRD, DMA, TGA)",
+      "Captures mechanical and thermal properties investigated (e.g., crystallization kinetics, Young's modulus, glass transition temperature, thermal stability)",
+      "Recognizes subordinate/related concepts without over-fragmenting (e.g., nucleation mechanisms as related to crystallization, not as separate topic)"
+    ],
+    "task_description": "Extract topics out of a passage of text from a scholarly article into a JSON array of strings",
+    "scenario": "Testing with a highly technical STEM passage containing domain-specific jargon, acronyms, and nested concepts where some topics are subordinate to others (e.g., a materials science abstract discussing polymers, crystallization, and mechanical properties)"
+  },
+  {
+    "prompt_inputs": {
+      "content": "The COVID-19 pandemic exposed critical vulnerabilities in public health infrastructure, particularly among low-income communities where pre-existing health disparities were exacerbated by limited access to testing and vaccination services. Epidemiological modeling revealed that transmission rates correlated strongly with population density and socioeconomic factors, including housing conditions and employment in essential services. Policy interventions ranged from targeted resource allocation to underserved neighborhoods to broader regulatory changes mandating workplace safety protocols. Furthermore, the economic burden of prolonged lockdowns disproportionately affected informal sector workers, creating feedback loops where financial instability reduced healthcare-seeking behavior and increased disease spread, while simultaneously highlighting the need for integrated approaches combining disease surveillance, social safety nets, and evidence-based governance frameworks."
+    },
+    "solution_criteria": [
+      "Extracts topics at consistent granularity level (avoiding over-fragmentation or excessive aggregation)",
+      "Captures distinct disciplinary perspectives (epidemiology, socioeconomics, policy, public health) without redundant overlap",
+      "Identifies all major conceptual areas discussed despite ambiguous boundaries between topics",
+      "Returns output as a valid JSON array of strings"
+    ],
+    "task_description": "Extract topics out of a passage of text from a scholarly article into a JSON array of strings",
+    "scenario": "Testing with an interdisciplinary passage mixing multiple fields where topic boundaries are ambiguous and require judgment calls about granularity level (e.g., a public health research excerpt touching on epidemiology, socioeconomics, and policy without clear topical separation)"
+  }
+]
