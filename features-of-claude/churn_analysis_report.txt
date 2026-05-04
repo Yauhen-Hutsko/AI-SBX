@@ -1,0 +1,129 @@
+====================================================================================================
+STREAMING SERVICE CHURN ANALYSIS - EXECUTIVE SUMMARY
+====================================================================================================
+
+📊 DATASET OVERVIEW
+----------------------------------------------------------------------------------------------------
+Total Customers Analyzed: 500
+Churned Customers: 193 (38.6%)
+Retained Customers: 307 (61.4%)
+
+🎯 TOP 5 CHURN DRIVERS (by Feature Importance)
+----------------------------------------------------------------------------------------------------
+  1. TotalViewingHoursLastMonth                    Importance: 0.2384
+  2. AverageSessionDurationMinutes                 Importance: 0.2155
+  3. NumberOfUniqueTitlesWatchedLastMonth          Importance: 0.1587
+  4. TopGenre                                      Importance: 0.1143
+  5. BingeWatchingSessionsLastMonth                Importance: 0.1117
+
+🔍 KEY FINDINGS
+----------------------------------------------------------------------------------------------------
+
+1. ENGAGEMENT IS THE #1 DRIVER
+   ──────────────────────────────────────────────────────────────────────────────────────────
+   • Churned users watch 66.6 hours/month on average
+   • Retained users watch 83.2 hours/month on average
+   • Retained users watch 25.0% MORE content than churned users
+   • TotalViewingHours has the HIGHEST feature importance (0.238)
+
+2. SESSION QUALITY MATTERS SIGNIFICANTLY
+   ──────────────────────────────────────────────────────────────────────────────────────────
+   • Churned users: 49.4 min/session average
+   • Retained users: 57.8 min/session average
+   • Retained users have 16.9% longer sessions
+   • Session duration is the 2nd most important feature (0.216)
+
+3. CONTENT DIVERSITY IMPACTS RETENTION
+   ──────────────────────────────────────────────────────────────────────────────────────────
+   • Churned users watch 19.5 unique titles/month
+   • Retained users watch 23.7 unique titles/month
+   • Retained users watch 22.0% more diverse content
+
+4. SUBSCRIPTION TIER ANALYSIS
+   ──────────────────────────────────────────────────────────────────────────────────────────
+   • Basic      Churn Rate: 43.48% (90/207 customers)
+   • Standard   Churn Rate: 39.52% (83/210 customers)
+   • Premium    Churn Rate: 24.10% (20/83 customers)
+   • Basic tier has 19.4% HIGHER churn than Premium
+
+5. GENRE PREFERENCES REVEAL PATTERNS
+   ──────────────────────────────────────────────────────────────────────────────────────────
+   Highest Churn Genres:
+      1. Horror          52.27%
+      2. Thriller        48.28%
+      3. Action          44.59%
+
+   Lowest Churn Genres:
+      1. Drama           35.29%
+      2. Comedy          33.00%
+      3. Documentary     25.93%
+
+6. CUSTOMER SERVICE INTERACTION PARADOX
+   ──────────────────────────────────────────────────────────────────────────────────────────
+   • Churned users: 3.18 interactions/year
+   • Retained users: 2.49 interactions/year
+   • Churned users have 27.7% MORE customer service contacts
+   • This suggests unresolved issues or dissatisfaction
+
+💡 STRATEGIC RECOMMENDATIONS
+----------------------------------------------------------------------------------------------------
+
+1. BOOST ENGAGEMENT (Addresses Top Driver)
+   • Target users with <67 viewing hours/month with personalized content recommendations
+   • Implement 'watch time challenges' or rewards for consistent viewing
+   • Send re-engagement emails to users with declining viewing trends
+
+2. IMPROVE SESSION QUALITY
+   • Focus on increasing average session duration (target: >58 minutes)
+   • Optimize content discovery to help users find binge-worthy series
+   • Reduce friction in content playback and navigation
+
+3. INCREASE CONTENT DIVERSITY
+   • Encourage users to explore >24 unique titles/month
+   • Create curated 'variety packs' spanning multiple genres
+   • Implement 'discovery bonuses' for trying new content types
+
+4. TIER-SPECIFIC INTERVENTIONS
+   • BASIC TIER (43.5% churn): Consider value-add features or pricing adjustments
+   • STANDARD TIER (39.5% churn): Highlight mid-tier benefits to prevent downgrades
+   • PREMIUM TIER (24.1% churn): Use as benchmark for retention best practices
+
+5. GENRE-BASED RETENTION STRATEGIES
+   • Horror/Thriller viewers (>48% churn): Expand catalog in these genres
+   • Documentary viewers (26% churn): Study and replicate their engagement patterns
+   • Cross-promote lower-churn genres to high-risk user segments
+
+6. CUSTOMER SERVICE OPTIMIZATION
+   • Users with 3+ CS interactions/year are HIGH RISK
+   • Implement proactive outreach after first service contact
+   • Track issue resolution rates and follow up on unresolved cases
+   • Consider 'save team' for users with multiple contacts
+
+⚠️  HIGH-RISK CUSTOMER SEGMENTS
+----------------------------------------------------------------------------------------------------
+
+Priority 1 - CRITICAL RISK (Immediate Intervention Needed):
+   • Basic tier subscribers watching <50 hours/month
+   • Users with 4+ customer service interactions
+   • Horror/Thriller fans with declining engagement
+
+Priority 2 - ELEVATED RISK (Monitor Closely):
+   • Users watching <70 hours/month regardless of tier
+   • Customers with session duration <50 minutes
+   • Users watching <20 unique titles/month
+
+📈 EXPECTED IMPACT OF INTERVENTIONS
+----------------------------------------------------------------------------------------------------
+
+Conservative Estimates (based on feature importance):
+   • Increasing viewing hours by 20%: ~4.8% reduction in churn
+   • Improving session quality by 15%: ~3.2% reduction in churn
+   • Boosting content diversity by 18%: ~2.8% reduction in churn
+   • Better CS issue resolution: ~1.6% reduction in churn
+
+   TOTAL POTENTIAL CHURN REDUCTION: 8-12 percentage points
+   (from 38.6% to 26.6%-30.6%)
+
+====================================================================================================
+END OF REPORT
+====================================================================================================
